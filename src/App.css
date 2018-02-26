@@ -24,6 +24,7 @@ span {
     padding-left: 70px;
     padding-right: 70px;
 }
+
 #h3one {
     margin-bottom: -7px;
     font-family: Avenir-Black;
@@ -45,9 +46,12 @@ hr {
     margin-right: 70px;
 }
 
+h1 {
+  font-size: 7em;
+}
+
 h6 {
     font-family: Avenir-light;
-
 }
 
 .left {

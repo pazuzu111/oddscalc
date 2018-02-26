@@ -30,7 +30,6 @@ export default class App extends Component {
     //on mount fetch data
     componentDidMount() {
         this.getData()
-
     }
 
     //onClick determine odds
@@ -76,28 +75,28 @@ export default class App extends Component {
     //**************************************************************************
     let a0 = this.state.loaded ?
                 <Ant onRef={ref => (this.ant0 = ref)} ant={this.state.ants[0]} />
-            :
-            null
+                :
+                null
 
     let a1 = this.state.loaded ?
                 <Ant onRef={ref => (this.ant1 = ref)} ant={this.state.ants[1]} />
-            :
-            null
+                :
+                null
 
     let a2 = this.state.loaded ?
                 <Ant onRef={ref => (this.ant2 = ref)} ant={this.state.ants[2]} />
-            :
-            null
+                :
+                null
 
     let a3 = this.state.loaded ?
                 <Ant onRef={ref => (this.ant3 = ref)} ant={this.state.ants[3]} />
-            :
-            null
+                :
+                null
 
     let a4 = this.state.loaded ?
                 <Ant onRef={ref => (this.ant4 = ref)} ant={this.state.ants[4]} />
-            :
-            null
+                :
+                null
 
     //**************************************************************************
 
@@ -112,8 +111,8 @@ export default class App extends Component {
                                     </div>
                                 )
                             })
-                        :
-                        null
+                            :
+                            <h1>Loading...</h1>
                         }
                         <h5>low chance</h5>
                     </div>

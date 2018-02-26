@@ -7,7 +7,7 @@ export default class Ant extends Component {
 
         //initialize state
         this.state = ({
-            status: 'calculate?',
+            status: 'not calculated',
             clicked: false,
             odds: 0,
         });
@@ -91,7 +91,7 @@ export default class Ant extends Component {
                     </div>
                     <div className="back">
                         <div className="description">
-                            <h2>HIRE ME  😊</h2>
+                            <h2>HIRE ME 😊</h2>
                         </div>
                     </div>
                 </div>

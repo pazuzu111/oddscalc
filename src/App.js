@@ -50,25 +50,25 @@ export default class App extends Component {
     }
 
 
-    // //retrieve odds from each ant using refs
-    // winners = () => {
+    //retrieve odds from each ant using refs
+    winners = () => {
 
-    //     //set eah odd to a variable for easy use
-    //     let ant0 = this.ant0.odd()
-    //     let ant1 = this.ant1.odd()
-    //     let ant2 = this.ant2.odd()
-    //     let ant3 = this.ant3.odd()
-    //     let ant4 = this.ant4.odd()
+        //set eah odd to a variable for easy use
+        let ant0 = this.ant0.odd()
+        let ant1 = this.ant1.odd()
+        let ant2 = this.ant2.odd()
+        let ant3 = this.ant3.odd()
+        let ant4 = this.ant4.odd()
 
-    //     //input into array
-    //     let arr = [ant0,ant1,ant2,ant3,ant4]
+        //input into array
+        let arr = [ant0,ant1,ant2,ant3,ant4]
 
-    //     //sort array greatest to least
-    //     arr.sort((a,b) => {return b-a})
-    //     this.setState({
-    //         runners: arr
-    //     })
-    // }
+        //sort array greatest to least
+        arr.sort((a,b) => {return b-a})
+        this.setState({
+            runners: arr
+        })
+    }
 
   render() {
 
@@ -101,22 +101,22 @@ export default class App extends Component {
 
     //**************************************************************************
 
-    // //odd results greatest to least
-    // let results =   <div id='runner'>
-    //                     <h5>high chance</h5>
-    //                     {this.state.loaded ?
-    //                         this.state.runners.map((x,i) => {
-    //                             return (
-    //                                 <div key={i}>
-    //                                     {x}%
-    //                                 </div>
-    //                             )
-    //                         })
-    //                     :
-    //                     null
-    //                     }
-    //                     <h5>low chance</h5>
-    //                 </div>
+    //odd results greatest to least
+    let results =   <div id='runner'>
+                        <h5>high chance</h5>
+                        {this.state.loaded ?
+                            this.state.runners.map((x,i) => {
+                                return (
+                                    <div key={i}>
+                                        {x}%
+                                    </div>
+                                )
+                            })
+                        :
+                        null
+                        }
+                        <h5>low chance</h5>
+                    </div>
 
     return (
         <div>

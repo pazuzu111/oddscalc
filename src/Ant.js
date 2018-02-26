@@ -23,40 +23,40 @@
 //         return this.state.odds
 //     }
 
-//     //calculate odds of an Ant
-//     getOdds = () => {
+    //calculate odds of an Ant
+    getOdds = () => {
 
-//         const win = () => {
+        const win = () => {
 
-//             let delay = 7000 + Math.random() * 7000
-//             let likelihood = Math.random() * (.5 - .01) + .01
+            let delay = 7000 + Math.random() * 7000
+            let likelihood = Math.random() * (.5 - .01) + .01
 
-//             //calculate odds
-//             const odds = (percent) => {
+            //calculate odds
+            const odds = (percent) => {
 
-//                 let result = (percent/(1 - percent)) * 100
+                let result = (percent/(1 - percent)) * 100
 
-//                 return result
-//             }
+                return result
+            }
 
-//             //return a promise payload
-//             return new Promise((resolve, reject) => {
+            //return a promise payload
+            return new Promise((resolve, reject) => {
 
-//                 //set delay before calling odds function
-//                 setTimeout(() => {
-//                   resolve(odds(likelihood));
-//                 }, delay);
-//             })
-//         }
+                //set delay before calling odds function
+                setTimeout(() => {
+                  resolve(odds(likelihood));
+                }, delay);
+            })
+        }
 
-//         //setSate with response from promise
-//         win().then(res => {
-//             this.setState({
-//                 odds: Math.floor(res),
-//                 status: 'calculated'
-//             })
-//         })
-//     }
+        //setSate with response from promise
+        win().then(res => {
+            this.setState({
+                odds: Math.floor(res),
+                status: 'calculated'
+            })
+        })
+    }
 
 //     //onclick flip state of status to in progress
 //     delay = () => {

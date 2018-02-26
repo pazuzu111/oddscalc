@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import Ant from './Ant.js'
+import Ant from './Ant.js'
 
 import './App.css';
 
@@ -33,113 +33,113 @@ export default class App extends Component {
 
     }
 
-  //   //onClick determine odds
-  //   odds = () => {
+    //onClick determine odds
+    odds = () => {
 
-  //       //run all odds simultaneously
-  //       this.ant0.delay()
-  //       this.ant1.delay()
-  //       this.ant2.delay()
-  //       this.ant3.delay()
-  //       this.ant4.delay()
+        //run all odds simultaneously
+        this.ant0.delay()
+        this.ant1.delay()
+        this.ant2.delay()
+        this.ant3.delay()
+        this.ant4.delay()
 
-  //       //call wiiners function very 1 second
-  //       setInterval(() => {
-  //           this.winners()
-  //       }, 100)
-  //   }
+        //call wiiners function very 1 second
+        setInterval(() => {
+            this.winners()
+        }, 100)
+    }
 
 
-  //   //retrieve odds from each ant using refs
-  //   winners = () => {
+    // //retrieve odds from each ant using refs
+    // winners = () => {
 
-  //       //set eah odd to a variable for easy use
-  //       let ant0 = this.ant0.odd()
-  //       let ant1 = this.ant1.odd()
-  //       let ant2 = this.ant2.odd()
-  //       let ant3 = this.ant3.odd()
-  //       let ant4 = this.ant4.odd()
+    //     //set eah odd to a variable for easy use
+    //     let ant0 = this.ant0.odd()
+    //     let ant1 = this.ant1.odd()
+    //     let ant2 = this.ant2.odd()
+    //     let ant3 = this.ant3.odd()
+    //     let ant4 = this.ant4.odd()
 
-  //       //input into array
-  //       let arr = [ant0,ant1,ant2,ant3,ant4]
+    //     //input into array
+    //     let arr = [ant0,ant1,ant2,ant3,ant4]
 
-  //       //sort array greatest to least
-  //       arr.sort((a,b) => {return b-a})
-  //       this.setState({
-  //           runners: arr
-  //       })
-  //   }
+    //     //sort array greatest to least
+    //     arr.sort((a,b) => {return b-a})
+    //     this.setState({
+    //         runners: arr
+    //     })
+    // }
 
-  // render() {
+  render() {
 
-  //   //ANTS
-  //   //**************************************************************************
-  //   let a0 = this.state.loaded ?
-  //               <Ant onRef={ref => (this.ant0 = ref)} ant={this.state.ants[0]} />
-  //           :
-  //           null
+    //ANTS
+    //**************************************************************************
+    let a0 = this.state.loaded ?
+                <Ant onRef={ref => (this.ant0 = ref)} ant={this.state.ants[0]} />
+            :
+            null
 
-  //   let a1 = this.state.loaded ?
-  //               <Ant onRef={ref => (this.ant1 = ref)} ant={this.state.ants[1]} />
-  //           :
-  //           null
+    let a1 = this.state.loaded ?
+                <Ant onRef={ref => (this.ant1 = ref)} ant={this.state.ants[1]} />
+            :
+            null
 
-  //   let a2 = this.state.loaded ?
-  //               <Ant onRef={ref => (this.ant2 = ref)} ant={this.state.ants[2]} />
-  //           :
-  //           null
+    let a2 = this.state.loaded ?
+                <Ant onRef={ref => (this.ant2 = ref)} ant={this.state.ants[2]} />
+            :
+            null
 
-  //   let a3 = this.state.loaded ?
-  //               <Ant onRef={ref => (this.ant3 = ref)} ant={this.state.ants[3]} />
-  //           :
-  //           null
+    let a3 = this.state.loaded ?
+                <Ant onRef={ref => (this.ant3 = ref)} ant={this.state.ants[3]} />
+            :
+            null
 
-  //   let a4 = this.state.loaded ?
-  //               <Ant onRef={ref => (this.ant4 = ref)} ant={this.state.ants[4]} />
-  //           :
-  //           null
+    let a4 = this.state.loaded ?
+                <Ant onRef={ref => (this.ant4 = ref)} ant={this.state.ants[4]} />
+            :
+            null
 
-  //   //**************************************************************************
+    //**************************************************************************
 
-  //   //odd results greatest to least
-  //   let results =   <div id='runner'>
-  //                       <h5>high chance</h5>
-  //                       {this.state.loaded ?
-  //                           this.state.runners.map((x,i) => {
-  //                               return (
-  //                                   <div key={i}>
-  //                                       {x}%
-  //                                   </div>
-  //                               )
-  //                           })
-  //                       :
-  //                       null
-  //                       }
-  //                       <h5>low chance</h5>
-  //                   </div>
+    // //odd results greatest to least
+    // let results =   <div id='runner'>
+    //                     <h5>high chance</h5>
+    //                     {this.state.loaded ?
+    //                         this.state.runners.map((x,i) => {
+    //                             return (
+    //                                 <div key={i}>
+    //                                     {x}%
+    //                                 </div>
+    //                             )
+    //                         })
+    //                     :
+    //                     null
+    //                     }
+    //                     <h5>low chance</h5>
+    //                 </div>
 
     return (
         <div>
             <div className="container1">
-            //     <div className="container">
-            //     <div className="heading">
-            //         <h3 id="h3one">ANT</h3>
-            //         <h3 id="h3two">ODDS of WINNING</h3>
-            //     </div>
-            //     <hr/>
-            //     {a0}
-            //     {a1}
-            //     {a2}
-            //     {a3}
-            //     {a4}
-            //     </div>
-            // </div>
+                <div className="container">
+                <div className="heading">
+                    <h3 id="h3one">ANT</h3>
+                    <h3 id="h3two">ODDS of WINNING</h3>
+                </div>
+                <hr/>
+                {a0}
+                {a1}
+                {a2}
+                {a3}
+                {a4}
+                </div>
+            </div>
 
-            // <div id="button">
-            //     <button onClick={this.odds}> calculate </button>
-            // </div>
+            <div id="button">
+                <button onClick={this.odds}> calculate </button>
+            </div>
 
-            // {results}
+            {results}
         </div>
     );
   }

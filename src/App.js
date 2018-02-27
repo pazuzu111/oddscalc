@@ -42,7 +42,7 @@ export default class App extends Component {
         this.ant3.delay()
         this.ant4.delay()
 
-        //call wiiners function very 1 second
+        //call wiiners function every tenth of a second
         setInterval(() => {
             this.winners()
         }, 100)

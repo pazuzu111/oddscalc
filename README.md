@@ -2,6 +2,11 @@
 
 calculates the odds of a race given the probability
 
+# functionality
+
+racer stats are pulled in from API, propability is randomized, 
+clicking calculate will run the getOdds function
+
 # stack
 
 - react
